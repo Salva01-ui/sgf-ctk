@@ -11,7 +11,7 @@ class LoginView(ctk.CTkFrame):
         
         
         #Pegando a imagem
-        login_image = ctk.CTkImage(light_image=Image.open("./static/img-login-page.png"), dark_image=Image.open("./static/img-login-page.png"), size=(400, 400))
+        login_image = ctk.CTkImage(light_image=Image.open("./static/imgs/img-login-page.png"), dark_image=Image.open("./static/imgs/img-login-page.png"), size=(350, 350))
         
         # Ligin View Frames
         self.frame = ctk.CTkFrame(self, fg_color='transparent', corner_radius=10)
@@ -21,7 +21,7 @@ class LoginView(ctk.CTkFrame):
         self.image_frame.grid(column=0, row=0)
         
         self.form_frame = ctk.CTkFrame(self.frame, )
-        self.form_frame.grid(column=1, row=0, sticky='news', pady=(50, 0))
+        self.form_frame.grid(column=1, row=0, sticky='news', pady=(50, 0), padx=(50,0))
         
         
         ctk.CTkLabel(self.frame, text='Sistema de Gestão de Funcionários | Desenvolvido por: @setprogramacao | 2025').grid(row=1, column=0, columnspan=2)

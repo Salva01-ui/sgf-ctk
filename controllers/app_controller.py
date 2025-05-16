@@ -14,7 +14,7 @@ class AppController:
         self.current_user = None
 
         # Configurações iniciais do customtkinter
-        ctk.set_appearance_mode("System")
+        ctk.set_appearance_mode("Dark")
         ctk.set_default_color_theme("./theme/dark-purpure.json")
         self.root = ctk.CTk()
         self.root.geometry("900x600")
